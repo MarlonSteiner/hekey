@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hekey — Heavyweight Streetwear</title>
+  <meta name="description" content="hekey makes heavyweight streetwear in small runs. Hoodies, tees, denim and cargos, cut oversized and built to last.">
+  <meta property="og:title" content="hekey — Heavyweight Streetwear">
+  <meta property="og:description" content="Heavyweight streetwear in small runs. Cut oversized, built to last.">
+  <meta property="og:image" content="assets/img/hero-1.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top navigation -->
+  <header class="nav" id="nav">
+    <nav class="nav__left" aria-label="Shop">
+      <button class="nav__menu label" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      <a class="label nav__link" href="#shop" data-filter="all">New</a>
+      <a class="label nav__link" href="#shop" data-filter="tops">Tops</a>
+      <a class="label nav__link" href="#shop" data-filter="bottoms">Bottoms</a>
+      <a class="label nav__link" href="#shop" data-filter="outerwear">Outerwear</a>
+      <a class="label nav__link" href="#shop" data-filter="accessories">Accessories</a>
+      <a class="label nav__link" href="#lookbook">Lookbook</a>
+    </nav>
+    <a class="nav__logo" href="#top" aria-label="hekey home">hekey</a>
+    <div class="nav__right">
+      <a class="label nav__link nav__hide-sm" href="#about">About</a>
+      <a class="label nav__link nav__hide-sm" href="#newsletter">Help</a>
+      <button class="label nav__link nav__bag" id="bagBtn" aria-controls="bag">Bag (<span id="bagCount">0</span>)</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a class="label" href="#shop" data-filter="all">New</a>
+    <a class="label" href="#shop" data-filter="tops">Tops</a>
+    <a class="label" href="#shop" data-filter="bottoms">Bottoms</a>
+    <a class="label" href="#shop" data-filter="outerwear">Outerwear</a>
+    <a class="label" href="#shop" data-filter="accessories">Accessories</a>
+    <a class="label" href="#lookbook">Lookbook</a>
+    <a class="label" href="#about">About</a>
+  </div>
+
+  <main id="top">
+
+    <!-- Full-bleed split hero -->
+    <section class="hero" aria-label="Fall / Winter 26">
+      <a class="hero__half" href="#shop" data-filter="tops">
+        <img src="assets/img/hero-1.jpg" alt="Model in a washed-black heavy hoodie and stone cargo trousers" fetchpriority="high">
+        <span class="label hero__label">Shop Tops</span>
+      </a>
+      <a class="hero__half" href="#shop" data-filter="bottoms">
+        <img src="assets/img/hero-2.jpg" alt="Model in a bone boxy tee, utility vest and wide faded denim" fetchpriority="high">
+        <span class="label hero__label">Shop Bottoms</span>
+      </a>
+      <h1 class="hero__wordmark" aria-label="hekey">hekey</h1>
+      <p class="label hero__season">Fall / Winter 26 — Drop 01</p>
+    </section>
+
+    <!-- Statement -->
+    <section class="statement" id="about">
+      <p class="label statement__kicker">hekey / 001</p>
+      <p class="statement__text">Heavyweight cotton, cut wide, made in small runs. Clothes for walking the city in&nbsp;the cold — nothing printed on them that you'd outgrow.</p>
+    </section>
+
+    <!-- Product grid -->
+    <section class="shop" id="shop" aria-label="Shop">
+      <div class="shop__bar">
+        <p class="label">Shop — <span id="shopTitle">All</span> <span class="muted mono" id="shopCount"></span></p>
+        <div class="filters" role="tablist" aria-label="Filter products">
+          <button class="label filter is-active" data-filter="all" role="tab">All</button>
+          <button class="label filter" data-filter="tops" role="tab">Tops</button>
+          <button class="label filter" data-filter="bottoms" role="tab">Bottoms</button>
+          <button class="label filter" data-filter="outerwear" role="tab">Outerwear</button>
+          <button class="label filter" data-filter="accessories" role="tab">Accessories</button>
+        </div>
+      </div>
+      <ul class="grid" id="grid"></ul>
+    </section>
+
+    <!-- Lookbook / editorial tiles -->
+    <section class="lookbook" id="lookbook" aria-label="Lookbook">
+      <div class="lookbook__head">
+        <p class="label">Lookbook — Drop 01</p>
+        <p class="label muted">Shot in St. Gallen, October 2026</p>
+      </div>
+      <div class="tiles">
+        <figure><img src="assets/img/e-1.jpg" alt="" loading="lazy"></figure>
+        <figure><img src="assets/img/e-2.jpg" alt="" loading="lazy"></figure>
+        <figure><img src="assets/img/e-3.jpg" alt="" loading="lazy"></figure>
+        <figure><img src="assets/img/e-4.jpg" alt="" loading="lazy"></figure>
+        <figure><img src="assets/img/e-5.jpg" alt="" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values" aria-label="How it's made">
+      <div class="value">
+        <p class="label mono muted">01</p>
+        <p class="label">480 GSM</p>
+        <p class="value__text">Our fleece is brushed loopback cotton at 480 grams per square metre. It holds its shape after a hundred washes.</p>
+      </div>
+      <div class="value">
+        <p class="label mono muted">02</p>
+        <p class="label">Small runs</p>
+        <p class="value__text">Each drop is made once, in numbered quantities. When a piece sells out, it stays sold out.</p>
+      </div>
+      <div class="value">
+        <p class="label mono muted">03</p>
+        <p class="label">Free returns</p>
+        <p class="value__text">Free shipping in Switzerland over CHF 150. Thirty days to send it back if the fit isn't right.</p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+      <p class="label">Drop 02 lands in December</p>
+      <form class="newsletter__form" id="newsForm">
+        <label class="sr-only" for="email">Email address</label>
+        <input class="newsletter__input" id="email" type="email" placeholder="Email address" required autocomplete="email">
+        <button class="label link" type="submit">Notify me</button>
+      </form>
+      <p class="label muted newsletter__msg" id="newsMsg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__cols">
+      <div>
+        <p class="label muted">Shop</p>
+        <a class="label" href="#shop" data-filter="tops">Tops</a>
+        <a class="label" href="#shop" data-filter="bottoms">Bottoms</a>
+        <a class="label" href="#shop" data-filter="outerwear">Outerwear</a>
+        <a class="label" href="#shop" data-filter="accessories">Accessories</a>
+      </div>
+      <div>
+        <p class="label muted">Help</p>
+        <a class="label" href="#newsletter">Shipping</a>
+        <a class="label" href="#newsletter">Returns</a>
+        <a class="label" href="#newsletter">Size guide</a>
+        <a class="label" href="#newsletter">Contact</a>
+      </div>
+      <div>
+        <p class="label muted">Follow</p>
+        <a class="label" href="#" rel="noopener">Instagram</a>
+        <a class="label" href="#" rel="noopener">TikTok</a>
+      </div>
+      <div class="footer__meta">
+        <p class="label muted">St. Gallen, Switzerland</p>
+        <p class="label muted">© <span id="year">2026</span> hekey</p>
+      </div>
+    </div>
+    <p class="footer__wordmark" aria-hidden="true">hekey</p>
+  </footer>
+
+  <!-- Product drawer -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer product" id="product" aria-hidden="true" aria-label="Product details">
+    <button class="label drawer__close" data-close>Close</button>
+    <div class="product__media"><img id="pImg" src="" alt=""></div>
+    <div class="product__info">
+      <p class="label muted" id="pCat"></p>
+      <h2 class="product__name" id="pName"></h2>
+      <p class="label mono" id="pPrice"></p>
+      <p class="product__desc" id="pDesc"></p>
+      <p class="label muted">Size</p>
+      <div class="sizes" id="pSizes" role="radiogroup" aria-label="Size"></div>
+      <button class="row-btn" id="addBtn"><span class="label">Add to bag</span><span class="label mono" id="addPrice"></span></button>
+      <p class="label muted product__note" id="addNote" aria-live="polite"></p>
+    </div>
+  </aside>
+
+  <!-- Bag drawer -->
+  <aside class="drawer bag" id="bag" aria-hidden="true" aria-label="Shopping bag">
+    <div class="bag__head">
+      <p class="label">Bag (<span id="bagCount2">0</span>)</p>
+      <button class="label drawer__close" data-close>Close</button>
+    </div>
+    <ul class="bag__items" id="bagItems"></ul>
+    <p class="label muted bag__empty" id="bagEmpty">Your bag is empty.</p>
+    <div class="bag__foot">
+      <div class="bag__line"><span class="label muted">Shipping</span><span class="label mono" id="bagShip">—</span></div>
+      <div class="bag__line"><span class="label">Subtotal</span><span class="label mono" id="bagTotal">CHF 0</span></div>
+      <button class="row-btn" id="checkoutBtn"><span class="label">Checkout</span><span class="label">→</span></button>
+      <p class="label muted product__note" id="checkoutNote" aria-live="polite"></p>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
